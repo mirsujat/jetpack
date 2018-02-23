@@ -76,7 +76,7 @@
   "version": "1.0.0",
   "description": "svideo_app",
   "main": "server.js",
-  "repository": "git@github.com:Dmytro9/svideo-react-app.git",
+  "repository": "https://github.com/mirsujat/jetpack/tree/svideo",
   "author": "Mir Sujat <mir.sujat@gmail.com>",
   "license": "1.0.0"
 }
