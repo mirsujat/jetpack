@@ -1,0 +1,36 @@
+<head>
+  <script src="http://fb.me/react-0.13.0.js"></script>
+  <script src="http://fb.me/JSXTransformer-0.13.0.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+</body>
+
+<script type="text/jsx">
+  // Define a `class`
+  var Badge = React.createClass({
+    // Define our render method.  The render method is the only required method
+    // in a React component.
+    render: function() {
+      // Return a snippet of JSX consisting of a button and a span.
+      // The button is assigned a class name and a type.  Inside of the button
+      // we place both a title and a number.  The number is wrapped inside of a span
+      // with class badge.
+      return <button className="btn btn-primary" type="button">
+        {this.props.title} <span className="badge">{this.props.number}</span>
+      </button>
+    }
+  });
+
+  // Initial setup options provided to the Badge componenet
+  var options = {
+    title: 'Sent',
+    number: 12
+  };
+
+  // React, please render this class
+  var element = React.createElement(Badge, options);
+
+  // React, after you render this class, please place it in my body tag
+  React.render(element, document.body);
+</script>
